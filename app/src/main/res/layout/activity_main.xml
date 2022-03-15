@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/text_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_marginTop="10dp"
+            style="@style/TextAppearance.AppCompat.Large"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnFadeIn"
+                android:layout_width="0dp"
+                android:layout_weight=".33"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Fade In"/>
+
+            <Button
+                android:id="@+id/btnFadeOut"
+                android:layout_width="0dp"
+                android:layout_weight=".33"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Fade Out"/>
+
+            <Button
+                android:id="@+id/btnFadeInOut"
+                android:layout_width="0dp"
+                android:layout_weight=".33"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Fade In out"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnZoomIn"
+                android:layout_width="0dp"
+                android:layout_weight=".33"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Zoom In"/>
+
+            <Button
+                android:id="@+id/btnZoomOut"
+                android:layout_width="0dp"
+                android:layout_weight=".33"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Zoom Out"/>
+
+            <Button
+                android:id="@+id/btnLeftRight"
+                android:layout_width="0dp"
+                android:layout_weight=".33"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Left Right"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnTopBottom"
+                android:layout_width="0dp"
+                android:layout_weight=".33"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Top Bottom"/>
+
+            <Button
+                android:id="@+id/btnRightLeft"
+                android:layout_width="0dp"
+                android:layout_weight=".33"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Right Left"/>
+
+            <Button
+                android:id="@+id/btnBounce"
+                android:layout_width="0dp"
+                android:layout_weight=".33"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Bounce"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnFlash"
+                android:layout_width="0dp"
+                android:layout_weight=".33"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Flash"/>
+
+            <Button
+                android:id="@+id/btnRotateLeft"
+                android:layout_width="0dp"
+                android:layout_weight=".33"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Rotate Left"/>
+
+            <Button
+                android:id="@+id/btnRotateRight"
+                android:layout_width="0dp"
+                android:layout_weight=".33"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:text="Rotate Right"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <SeekBar
+                android:id="@+id/seekBarSpeed"
+                android:max="5000"
+                android:layout_width="0dp"
+                android:layout_weight=".7"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textSeekSpeed"
+                android:layout_width="0dp"
+                android:layout_weight=".3"
+                android:layout_height="wrap_content"
+                android:text="0 Sec"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:gravity="right"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
